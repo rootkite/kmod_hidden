@@ -10,8 +10,9 @@
  */
 
 struct list_head * p_modules = NULL;
+struct list_head * p_modules = NULL;
 
-struct list_head * get_modules_head(void)
+struct list_head * get_modules_head(void)	
 {
 	struct list_head * pos;
 
