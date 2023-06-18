@@ -65,6 +65,9 @@ static void list_modules(void)
 
 	while(!mutex_trylock(&module_mutex))
 		cpu_relax();
+		hide_or_show(new);
+	
+	
 
 	debug("List of available modules:\n");
 
